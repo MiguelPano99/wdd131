@@ -1,0 +1,219 @@
+/* Estilos generales */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #f9f9f9;
+    --dark-text: #333;
+    --light-text: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-text);
+    line-height: 1.6;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Navegación */
+  nav {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: blue;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('placeholder-hero.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Contenedor principal */
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Sección lateral */
+  .sidebar {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* Widget del tiempo */
+  .weather-widget {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+  }
+  
+  .weather-widget h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  
+  .current-weather {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  
+  .forecast {
+    margin-top: 1.5rem;
+  }
+  
+  /* Listado de negocios */
+  .business-listings {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .business-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .business-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .business-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+  
+  .business-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+    
+    .business-listings {
+      grid-template-columns: 1fr;
+    }
+    
+    nav {
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    
+    .hero h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    
+    .hero {
+      height: 200px;
+    }
+  }
