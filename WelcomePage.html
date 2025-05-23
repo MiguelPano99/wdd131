@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mazatlán: The Pearl of the Pacific</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/Welcome.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to Mazatlán</h1>
+            <p>The Pearl of the Pacific: Where Sun, Sea, and Culture Embrace</p>
+            <a href="#about" class="cta-button">Discover Mazatlán</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Mazatlán</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Mazatlán</h2>
+            <p>Nestled on Mexico's stunning Pacific coast, Mazatlán is a vibrant city renowned for its golden beaches, rich history, and lively culture. From the historic charm of its Old Town (Centro Histórico) with its neoclassical architecture and lively plazas, to the modern allure of its Golden Zone (Zona Dorada) with bustling resorts and nightlife, Mazatlán offers a diverse array of experiences for every traveler. Enjoy delicious seafood, exhilarating water sports, and breathtaking sunsets that paint the sky in fiery hues.</p>
+        </section>
+
+        <section id="attractions" class="container">
+            <h2>Key Attractions</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/007BFF/FFFFFF?text=Old+Town" alt="Mazatlan Old Town">
+                    <h3>Historic Old Town (Centro Histórico)</h3>
+                    <p>Wander through cobblestone streets, admire colonial buildings, and visit the beautiful Immaculate Conception Basilica. Explore art galleries, boutiques, and enjoy live music in Plazuela Machado.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/FFC107/343A40?text=Malecon" alt="Mazatlan Malecon">
+                    <h3>Mazatlán Malecón</h3>
+                    <p>Stroll along one of the longest boardwalks in the world, offering stunning ocean views, iconic monuments, and a vibrant atmosphere perfect for walking, jogging, or cycling.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/DC3545/FFFFFF?text=Golden+Zone" alt="Mazatlan Golden Zone">
+                    <h3>Golden Zone (Zona Dorada)</h3>
+                    <p>Experience the bustling heart of tourism with luxury resorts, fine dining, lively bars, and endless shopping opportunities. Perfect for sunbathing and water sports.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/28A745/FFFFFF?text=Stone+Island" alt="Stone Island Mazatlan">
+                    <h3>Stone Island (Isla de la Piedra)</h3>
+                    <p>A serene escape just a short boat ride away. Enjoy pristine beaches, horseback riding, ATV tours, and delicious fresh seafood in a laid-back setting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="container">
+            <h2>Upcoming Events & Festivities</h2>
+            <p>Mazatlán is famous for its vibrant cultural calendar. Don't miss these highlights!</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/FFC107/343A40?text=Carnaval" alt="Mazatlan Carnaval">
+                    <h3>Mazatlán Carnaval</h3>
+                    <p>One of the largest and most spectacular carnivals in the world, featuring parades, music, fireworks, and non-stop celebrations. (Typically in February or March)</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/007BFF/FFFFFF?text=Dia+de+Muertos" alt="Dia de Muertos">
+                    <h3>Day of the Dead Celebrations</h3>
+                    <p>Experience the beautiful and poignant traditions of Día de Muertos with altars, parades, and cultural events throughout the city. (November 1-2)</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x200/DC3545/FFFFFF?text=Art+Walk" alt="Mazatlan Art Walk">
+                    <h3>First Friday Art Walk</h3>
+                    <p>Explore the vibrant art scene of Centro Histórico as galleries open their doors for an evening of art, music, and wine. (First Friday of each month)</p>
+                </div>
+            </div>
+            <p style="margin-top: 40px; font-size: 1.1em;">For a full calendar of events, <a href="#" class="cta-button" style="background-color: var(--primary-color); color: var(--light-text);">View Our Event Calendar</a></p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Connect With Us</h2>
+            <p>Have questions or ready to plan your trip? We're here to help!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+52 669 981 3000</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@visitmazatlan.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Mazatlán, Sinaloa, Mexico</span>
+                </div>
+            </div>
+
+            <form action="#" method="POST">
+                <h3>Send Us a Message</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mazatlán Tourism Board. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p><a href="#" style="color: var(--secondary-color); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--secondary-color); text-decoration: none;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) { 
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const homeLink = document.querySelector('nav a[href="#home"]');
+            if (homeLink) {
+                homeLink.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
