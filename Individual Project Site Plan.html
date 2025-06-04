@@ -1,0 +1,135 @@
+Website Plan: Discover Macau: Fusion of East and West
+1. Website Name
+Discover Macau: Fusion of East and West
+
+2. Site Purpose
+To promote Macau as a unique tourist destination, highlighting its rich history, its Sino-Portuguese cultural fusion, its vibrant gastronomic scene, and its exciting entertainment, attracting global visitors.
+
+3. Configuration and Key Features
+Target Audience:
+
+International and national tourists interested in culture, history, gastronomy, and luxury entertainment.
+
+Business travelers and conference attendees.
+
+Architecture and photography enthusiasts.
+
+Main Sections:
+
+Home: Introduction to Macau, highlights, rotating gallery.
+
+History and Heritage: Ruins of St. Paul's, Historic Centre (UNESCO), Temples, Fortresses.
+
+Culture and Traditions: Sino-Portuguese fusion, festivals, arts and crafts.
+
+Gastronomy: Macanese cuisine, Michelin-starred restaurants, local markets.
+
+Entertainment and Luxury: Casinos, shows, shopping, nightlife.
+
+Plan Your Visit: Practical information, accommodation, transportation, tours.
+
+Gallery: High-quality photos and videos.
+
+Contact: Contact form and social media.
+
+Key Functionalities:
+
+Interactive image and video gallery.
+
+Interactive map of attractions.
+
+Contact form and newsletter subscription.
+
+Social media integration.
+
+Search bar.
+
+4. Color Scheme
+Inspired by Macau's cultural richness and luxury, combining traditional Chinese elements and Portuguese influence.
+
+Primary: #8B0000 (Burgundy Red - Elegance, Chinese tradition)
+
+Secondary: #DAA520 (Gold - Luxury, prosperity, casinos)
+
+Accent 1: #2F4F4F (Dark Green/Jade - History, serenity, heritage)
+
+Accent 2: #F5DEB3 (Cream/Beige - Neutrality, warmth, colonial architecture)
+
+Main Text: #333333 (Dark Gray - Readability)
+
+Background: #F8F8F8 (Very Light Gray - Cleanliness, modernity)
+
+5. Typography
+A combination of a serif font for headings that evokes history and a modern sans-serif for body text that ensures readability.
+
+Headings: Playfair Display (Serif - Elegant, classic, sophisticated)
+
+Body Text: Open Sans (Sans-serif - Clean, modern, highly legible)
+
+6. Wireframe (General Design Overview)
+The site will have a responsive design, adaptable to different screen sizes (mobile, tablet, desktop).
+
+Header:
+
+Site logo (Name: "Discover Macau") on the left.
+
+Main navigation menu (Home, History, Culture, Gastronomy, Entertainment, Plan Your Visit, Gallery, Contact) on the right, collapsible on mobile devices (hamburger icon).
+
+Search bar (optional).
+
+Hero Section:
+
+High-quality background image or video of Macau (e.g., Ruins of St. Paul's at sunset).
+
+Main title (<h1>) and subtitle (<p>) with a call to action (<button>).
+
+Content Sections (e.g., History, Gastronomy, Entertainment):
+
+Each section will have a title (<h2>).
+
+Grid or column layout to display content (text, images, cards).
+
+Example: "History" section could have 3-4 cards with images and brief descriptions of key sites.
+
+Call to Action:
+
+Intermediate sections with a persuasive message and a button to guide the user.
+
+Gallery:
+
+Image grid layout, with filtering options.
+
+Footer:
+
+Contact information, social media links, sitemap (quick links), copyright.
+
+7. CSS Files (Using Tailwind CSS and Optional Custom CSS)
+This project will primarily use Tailwind CSS for rapid development and responsive design. All style classes will be applied directly in the HTML.
+
+For more specific styles or complex animations that cannot be easily achieved with Tailwind, a custom CSS file (style.css) could be considered. However, for this example, we will rely on Tailwind.
+
+<!-- In the <head> of the HTML -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    /* Custom fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+    
+    .font-playfair {
+        font-family: 'Playfair Display', serif;
+    }
+    .font-open-sans {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Custom Tailwind colors (extended configuration) */
+    /* This would be configured in a tailwind.config.js file if not using the CDN,
+       but for the CDN, they can be simulated with direct classes or CSS variables */
+    :root {
+        --color-primary: #8B0000;
+        --color-secondary: #DAA520;
+        --color-accent1: #2F4F4F;
+        --color-accent2: #F5DEB3;
+        --color-text-main: #333333;
+        --color-bg-light: #F8F8F8;
+    }
+</style>
