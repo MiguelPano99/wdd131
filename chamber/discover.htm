@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery with Cards</title>
+    <link rel="stylesheet" href="css/discover.css">
+</head>
+<body>
+    <header>
+        <h1>Our Amazing Gallery</h1>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <h2>Welcome Back!</h2>
+            <p id="visitMessage"></p>
+        </aside>
+        <section class="card-grid">
+            <div class="card">
+                <h2>Card Title 1</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Description of Photo 1">
+                    <figcaption>Photo 1</figcaption>
+                </figure>
+                <address>123 Main St, Anytown</address>
+                <p>This is a brief description for card 1. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 2</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Description of Photo 2">
+                    <figcaption>Photo 2</figcaption>
+                </figure>
+                <address>456 Oak Ave, Anytown</address>
+                <p>This is a brief description for card 2. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 3</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Description of Photo 3">
+                    <figcaption>Photo 3</figcaption>
+                </figure>
+                <address>789 Pine Ln, Anytown</address>
+                <p>This is a brief description for card 3. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 4</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Description of Photo 4">
+                    <figcaption>Photo 4</figcaption>
+                </figure>
+                <address>101 Maple Dr, Anytown</address>
+                <p>This is a brief description for card 4. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 5</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+5" alt="Description of Photo 5">
+                    <figcaption>Photo 5</figcaption>
+                </figure>
+                <address>202 Birch Rd, Anytown</address>
+                <p>This is a brief description for card 5. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 6</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+6" alt="Description of Photo 6">
+                    <figcaption>Photo 6</figcaption>
+                </figure>
+                <address>303 Cedar Ct, Anytown</address>
+                <p>This is a brief description for card 6. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 7</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+7" alt="Description of Photo 7">
+                    <figcaption>Photo 7</figcaption>
+                </figure>
+                <address>404 Elm Blv, Anytown</address>
+                <p>This is a brief description for card 7. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>Card Title 8</h2>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Photo+8" alt="Description of Photo 8">
+                    <figcaption>Photo 8</figcaption>
+                </figure>
+                <address>505 Fir Pk, Anytown</address>
+                <p>This is a brief description for card 8. It provides some interesting details about the item presented.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Awesome Gallery</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const visitMessageElement = document.getElementById('visitMessage');
+            const lastVisit = localStorage.getItem('lastVisit');
+            const now = Date.now(); // Current timestamp in milliseconds
+
+            if (!lastVisit) {
+                // First visit
+                visitMessageElement.textContent = "Welcome! Let us know if you have any questions.";
+            } else {
+                const lastVisitDate = parseInt(lastVisit);
+                const timeDifference = now - lastVisitDate;
+                const oneDay = 24 * 60 * 60 * 1000; // Milliseconds in a day
+
+                if (timeDifference < oneDay) {
+                    // Less than a day
+                    visitMessageElement.textContent = "Back so soon! Awesome!";
+                } else {
+                    // More than a day
+                    const days = Math.round(timeDifference / oneDay);
+                    if (days === 1) {
+                        visitMessageElement.textContent = `Last visited 1 day ago.`;
+                    } else {
+                        visitMessageElement.textContent = `Last visited ${days} days ago.`;
+                    }
+                }
+            }
+            // Update last visit for next time
+            localStorage.setItem('lastVisit', now.toString());
+        });
+    </script>
+</body>
+</html>
