@@ -1,0 +1,30 @@
+.menu-toggle {
+    display: none; 
+}
+
+.nav-links {
+    display: flex; 
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+    box-shadow: none;
+}
+
+.nav-links li {
+    padding: 0 10px;
+    border-top: none;
+}
+
+.nav-links a {
+    padding: 5px 10px;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.temple-card {
+    padding: 15px;
+}
