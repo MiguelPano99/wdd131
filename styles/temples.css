@@ -67,10 +67,10 @@ header {
     color: white;
     font-size: 1.5em;
     cursor: pointer;
-    display: block; /* Show hamburger icon on mobile */
+    display: block; 
 }
 
-/* JavaScript class to show the menu */
+
 .nav-links.show {
     display: flex;
 }
@@ -81,7 +81,7 @@ main h2 {
     margin: 20px 0;
 }
 
-/* Gallery layout for mobile: single column */
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
