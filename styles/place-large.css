@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-areas:
+            "image image image"
+            "data main weather";
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 30px;
+    }
+
+    .image-section {
+        grid-area: image;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .main-image {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .data-card {
+        padding: 0;
+        box-shadow: none;
+        background: none;
+        margin-bottom: 0;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .data-left {
+        grid-area: data;
+        left: 20px;
+    }
+
+    .weather-right {
+        grid-area: weather;
+        right: 20px;
+    }
+
+    .data-card h2 {
+        background-color: #27ae60;
+        color: white;
+        margin: 0;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .data-card table {
+        padding: 15px;
+    }
+    
+    .data-card td {
+        padding: 5px 15px 5px 0;
+    }
+    
+    .weather-right .weather-content {
+        padding: 15px;
+    }
+
+    .weather-icon span {
+        font-size: 3em;
+    }
+
+    .weather-details table {
+        padding: 0;
+    }
+}
