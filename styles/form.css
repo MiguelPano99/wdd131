@@ -1,0 +1,161 @@
+        :root {
+            --primary-blue: #0A3D62; /* Dark Blue */
+            --secondary-blue: #1E6B8D; /* Medium Blue */
+            --light-blue: #D0E0F0; /* Very Light Blue */
+            --text-color: #180501; /* Black */
+            --background-color: #F8F8F8; /* Light background */
+            --star-color: #FFC107; /* Star Yellow */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .form-content {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        select, input[type="text"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--secondary-blue);
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: var(--light-blue);
+        }
+
+        select:focus, input:focus, textarea:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 5px rgba(10, 61, 98, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Rating Stars */
+        .rating-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .rating-option {
+            text-align: center;
+        }
+
+        .rating-option label {
+            font-size: 1.2em;
+            color: var(--primary-blue);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .rating-option input[type="radio"] {
+            display: none;
+        }
+
+        .rating-option input[type="radio"]:checked + label {
+            color: var(--star-color);
+        }
+
+        .star {
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Checkboxes */
+        .checkbox-group label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+            accent-color: var(--secondary-blue);
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: var(--secondary-blue);
+        }
+
+        button:active {
+            transform: scale(0.99);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--light-blue);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 0.8em;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .optional-text {
+            font-size: 0.9em;
+            color: var(--secondary-blue);
+            margin-left: 5px;
+        }
