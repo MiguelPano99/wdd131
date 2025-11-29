@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Durango Express - Project Brief</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#F4320B',
+                        'secondary-white': '#FEEBE7',
+                        'text-black': '#180501',
+                    },
+                    fontFamily: {
+                        'title': ['"Playfair Display"', 'serif'],
+                        'body': ['Lora', 'serif'], 
+                    },
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-secondary-white font-body text-text-black min-h-screen flex flex-col">
+
+    <!-- Header & Navigation -->
+    <header class="bg-primary-orange shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-secondary-white text-3xl font-title tracking-wider">
+                        Project Brief: Hotel Durango Express
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 text-lg">
+                    <a href="#purpose" class="text-secondary-white hover:text-text-black transition duration-300">Purpose</a>
+                    <a href="#scenarios" class="text-secondary-white hover:text-text-black transition duration-300">Scenarios</a>
+                    <a href="#design" class="text-secondary-white hover:text-text-black transition duration-300">Design</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section - Project Name -->
+        <section class="relative h-60 flex items-center justify-center text-center overflow-hidden bg-primary-orange/50">
+            <div class="relative z-10 p-6 bg-secondary-white/90 rounded-xl shadow-2xl mx-4">
+                <h2 class="text-4xl md:text-5xl font-title text-primary-orange mb-2 leading-tight">
+                    Site Name: Hotel Durango Express
+                </h2>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-title text-primary-orange mb-12 text-center">Project Overview and Requirements</h3>
+
+            <!-- Purpose -->
+            <section id="purpose" class="mb-16 bg-primary-orange/10 p-8 rounded-lg">
+                <h4 class="text-3xl font-title text-text-black mb-6 border-b-2 border-primary-orange pb-2">
+                    1. Purpose
+                </h4>
+                <p class="text-lg text-text-black">
+                    A hotel that offers the best hospitality services in Durango, where you can find everything you need on this website. The site serves as the main information and booking portal for prospective guests.
+                </p>
+            </section>
+
+            <!-- Scenarios -->
+            <section id="scenarios" class="mb-16">
+                <h4 class="text-3xl font-title text-text-black mb-6 border-b-2 border-primary-orange pb-2">
+                    2. Key Scenarios / User Questions
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-secondary-white p-6 rounded-lg shadow-xl border-t-4 border-primary-orange">
+                        <h5 class="text-xl font-title text-primary-orange mb-3">What does the hotel offer?</h5>
+                        <p class="text-text-black">Focus on amenities, room types, and key features (e.g., dining, meeting rooms).</p>
+                    </div>
+                    <div class="bg-secondary-white p-6 rounded-lg shadow-xl border-t-4 border-primary-orange">
+                        <h5 class="text-xl font-title text-primary-orange mb-3">What services does it have?</h5>
+                        <p class="text-text-black">List complimentary services (Wi-Fi, parking, 24h room service, fitness center).</p>
+                    </div>
+                    <div class="bg-secondary-white p-6 rounded-lg shadow-xl border-t-4 border-primary-orange">
+                        <h5 class="text-xl font-title text-primary-orange mb-3">What's in the area?</h5>
+                        <p class="text-text-black">Highlight nearby attractions and points of interest in Durango.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design -->
+            <section id="design" class="mb-8">
+                <h4 class="text-3xl font-title text-text-black mb-6 border-b-2 border-primary-orange pb-2">
+                    3. Design & Style Guide
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Color Scheme -->
+                    <div class="bg-secondary-white p-6 rounded-lg shadow-xl border-l-4 border-primary-orange">
+                        <h5 class="text-xl font-title text-primary-orange mb-3">Color Scheme</h5>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 rounded-full bg-primary-orange mr-3"></span>
+                                <p><strong>Primary Orange:</strong> #F4320B (Site Identity)</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 rounded-full bg-secondary-white border border-gray-300 mr-3"></span>
+                                <p><strong>Secondary White:</strong> #FEEBE7 (Background/Containers)</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 rounded-full bg-text-black mr-3"></span>
+                                <p><strong>Text Black:</strong> #180501 (General Text)</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Typography -->
+                    <div class="bg-secondary-white p-6 rounded-lg shadow-xl border-l-4 border-primary-orange">
+                        <h5 class="text-xl font-title text-primary-orange mb-3">Typography</h5>
+                        <ul class="list-none space-y-3">
+                            <li>
+                                <p class="font-title text-2xl text-text-black">Titles: "Butler" (using Playfair Display)</p>
+                            </li>
+                            <li>
+                                <p class="font-body text-lg text-text-black">General Text: "Recoleta" (using Lora)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-orange text-secondary-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p class="mb-1">
+                &copy;<span id="currentYear"></span> Hotel Durango Express Project Brief
+            </p>
+            <p>
+                Last Modified: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Footer Dates -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYearSpan = document.getElementById('currentYear');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+
+            const lastModifiedSpan = document.getElementById('lastModified');
+            if (lastModifiedSpan) {
+                // Formatting the last modified date to be more readable
+                const date = new Date(document.lastModified);
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                lastModifiedSpan.textContent = date.toLocaleDateString('en-US', options);
+            }
+        });
+    </script>
+</body>
+</html>
