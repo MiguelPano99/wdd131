@@ -1,0 +1,198 @@
+/* RESET BÁSICO */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-padding {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #0056b3; /* Un color de acento azul */
+}
+
+/* HEADER Y NAVEGACIÓN */
+header {
+    background-color: #2c3e50; /* Azul oscuro */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* HOME SECTION (WELCOME) */
+.hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 100px; /* Más espacio */
+    border-bottom: 5px solid #eee;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.picture-placeholder {
+    width: 250px;
+    height: 150px;
+    background-color: #ccc;
+    border: 1px dashed #666;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #444;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* ROOMS SECTION (GRID DE PRECIOS) */
+.price-grid {
+    display: grid;
+    /* 2 columnas en móvil, 3+ en escritorio */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.room-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.room-card h3 {
+    margin-top: 0;
+    color: #007bff; /* Color de título de habitación */
+    font-size: 1.5em;
+}
+
+.photo-space {
+    background-color: #ecf0f1; /* Gris claro */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #666;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.room-card p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.room-card strong {
+    color: #e74c3c; /* Color para los precios */
+}
+
+/* EXTRA PEOPLE INFO */
+.extra-people-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f9ff;
+    border-radius: 8px;
+    border: 2px dashed #007bff;
+    max-width: 400px;
+    margin: 40px auto 0;
+}
+
+.extra-people-info h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #555;
+}
+
+/* Placeholder para los iconos (Idealmente usarías Font Awesome o imágenes reales) */
+.social-media .icon {
+    /* Aquí se configurarían los iconos con CSS o imágenes */
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}

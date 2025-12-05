@@ -1,0 +1,293 @@
+/* RESET BÁSICO */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-padding {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #0056b3; 
+}
+
+
+header {
+    background-color: #E32C09; 
+    color: #180501;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* HOME SECTION (WELCOME) */
+.hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 100px; /* Más espacio */
+    border-bottom: 5px solid #eee;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.picture-placeholder {
+    width: 250px;
+    height: 150px;
+    background-color: #ccc;
+    border: 1px dashed #666;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #444;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* ROOMS SECTION (GRID DE PRECIOS) */
+.price-grid {
+    display: grid;
+    /* 2 columnas en móvil, 3+ en escritorio */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.room-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.room-card h3 {
+    margin-top: 0;
+    color: #007bff; /* Color de título de habitación */
+    font-size: 1.5em;
+}
+
+.photo-space {
+    background-color: #ecf0f1; /* Gris claro */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #666;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.room-card p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.room-card strong {
+    color: #e74c3c; /* Color para los precios */
+}
+
+/* EXTRA PEOPLE INFO */
+.extra-people-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f9ff;
+    border-radius: 8px;
+    border: 2px dashed #007bff;
+    max-width: 400px;
+    margin: 40px auto 0;
+}
+
+.extra-people-info h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #555;
+}
+
+/* Placeholder para los iconos (Idealmente usarías Font Awesome o imágenes reales) */
+.social-media .icon {
+    /* Aquí se configurarían los iconos con CSS o imágenes */
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.interest-places-section {
+    background-color: #f9f9f9;
+}
+
+.places-container {
+    display: grid;
+    /* Distribuye las tres categorías en la misma fila en pantallas grandes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.place-category {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.place-category h3 {
+    color: #e74c3c; /* Color de acento para los títulos de categorías */
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.place-list {
+    list-style: none; /* Quitamos los puntos de lista predeterminados */
+    padding: 0;
+}
+
+.place-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    font-size: 1.1em;
+}
+
+.place-list li:last-child {
+    border-bottom: none;
+}
+
+.map-pin-icon {
+    color: #3498db; /* Un color azul para el pin de ubicación */
+    font-size: 1.2em;
+}
+
+
+/* RULES AND FAQ SECTIONS STYLES */
+.rules-list, .faq-item {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.rules-list {
+    list-style-type: '👉'; /* Usa un emoji como marcador de lista */
+    padding-left: 20px;
+}
+
+.rules-list li {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-size: 1.1em;
+}
+
+.faq-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.faq-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* FOOTER ICONS UPDATE */
+/* Se utiliza Font Awesome para los iconos de Facebook, WhatsApp y Google Maps */
+.social-media a i {
+    margin-right: 5px;
+}
